@@ -1,0 +1,6 @@
+Django==4.2.0 
+djangorestframework==3.14.0 
+psycopg2-binary==2.9.6 
+redis==4.5.4 
+celery==5.2.7 
+python-dotenv==1.0.0 

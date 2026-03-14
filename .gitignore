@@ -1,0 +1,13 @@
+version: '3.8'  # Python 
+__pycache__/ 
+*.py[cod] 
+*.pyc 
+.env 
+venv/ 
+.DS_Store 
+.vscode/ 
+.idea/ 
+*.db 
+*.db 
+*.sqlite3 
+*.log 
