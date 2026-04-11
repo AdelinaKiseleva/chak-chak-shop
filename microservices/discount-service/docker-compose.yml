@@ -1,0 +1,24 @@
+version: '3.8' 
+ 
+services: 
+  notification-service: 
+    build: ./microservices/notification-service 
+    container_name: notification-service 
+    ports: 
+      - "5001:5001" 
+    networks: 
+      - microservices-network 
+    restart: unless-stopped 
+ 
+  discount-service: 
+    build: ./microservices/discount-service 
+    container_name: discount-service 
+    ports: 
+      - "5002:5002" 
+    networks: 
+      - microservices-network 
+    restart: unless-stopped 
+ 
+networks: 
+  microservices-network: 
+    driver: bridge 
